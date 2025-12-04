@@ -1,6 +1,6 @@
 # 🛒 eBay 
 
-We chose eBay (https://www.ebay.com) because it meets all requirements of the assignment:
+We chose eBay (https://www.ebay.com) because:
 - It is a dynamic, JavaScript-rendered website  
 - Product lists update dynamically  
 - Many items load via lazy loading / infinite scroll  
