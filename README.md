@@ -22,27 +22,6 @@ The final cleaned dataset contains at least 100 valid products, as required.
 
 ---
 
-## 🚀 How to Run Scraping
-
-```bash
-pip install -r requirements.txt
-python main.py laptop 100
-```
-
-Parameters:
-
-- laptop — search query
-- 100 — minimum number of items to collect
-- data enrichment (product detail pages) can be toggled in arguments
-
-During execution, the script:
-
-- Downloads eBay search result pages
-- Parses all product card
-- Cleans and normalizes fields
-- Removes duplicates
-- Saves final data into JSON + SQLite
-
 # 🗄️ How to Run Airflow
 
 The DAG is located in:
