@@ -39,7 +39,7 @@ def scrape_page(driver, url, page_num):
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.su-card-container")))
         print("✓ Products loaded!")
     except Exception as e:
-        print(f"⚠️  Unable to wait for items to load: {e}")
+        print(f" Unable to wait for items to load: {e}")
         print("We continue with the current content of the page...")
 
     print("Scrolling the page...")
