@@ -29,24 +29,9 @@ def setup_driver():
 def scrape_page(driver, url, page_num):
 
     print(f"\n{'='*70}")
-    print(f"📄 Page {page_num}: {url}")
+    print(f"Page {page_num}: {url}")
     print(f"{'='*70}")
     driver.get(url)
-    
-    if page_num == 1:
-        print("CAPTCHA check...")
-        time.sleep(3)
-        
-        if "challenge" in driver.current_url or "captcha" in driver.page_source.lower():
-            print("\n" + "="*70)
-            print("⚠️  CAPTCHA DETECTED!")
-            print("Please solve the CAPTCHA manually in an open browser.")
-            print("After solving the CAPTCHA, press Enter in the console...")
-            print("="*70)
-            input("Press Enter after solving the CAPTCHA: ")
-            time.sleep(2)
-    else:
-        time.sleep(2)
 
     print("Waiting for goods to load...")
     try:
@@ -106,7 +91,7 @@ def scrape_product_pages(items_data, save_html=True):
     
     try:
         print("\n" + "="*70)
-        print("🌐 LOADING PRODUCT PAGES")
+        print("LOADING PRODUCT PAGES")
         print("="*70)
         print(f"Total products: {len(items_data)}")
         print(f"Average latency: 3-4 seconds between requests")
@@ -138,7 +123,7 @@ def scrape_product_pages(items_data, save_html=True):
                     print(f"[{idx}/{len(items_data)}]  Failed to save: {e}")
         
         print("\n" + "="*70)
-        print(f"✅ DOWNLOAD COMPLETED")
+        print(f"DOWNLOAD COMPLETED")
         print(f"Succes: {sum(1 for h in product_htmls if h is not None)}/{len(items_data)}")
         print("="*70)
         
@@ -181,14 +166,14 @@ def scrape_ebay(search_query="laptop", max_items=100, save_html=True):
             estimated_items = page_num * 60  
             total_items_found = estimated_items
             
-            print(f"📊 Approximately collected: ~{total_items_found} goods")
+            print(f"Approximately collected: ~{total_items_found} goods")
 
             if total_items_found >= max_items:
-                print(f"\n✅ The approximate quantity of goods has been reached")
+                print(f"\nThe approximate quantity of goods has been reached")
                 break
 
             page_num += 1
-            print(f"\n⏩ Go to page{page_num}...")
+            print(f"\nGo to page{page_num}...")
             time.sleep(2)  
         
         print(f"\n✓ Pages loaded: {len(html_pages)}")

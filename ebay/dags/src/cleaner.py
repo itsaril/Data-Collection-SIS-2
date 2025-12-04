@@ -301,7 +301,7 @@ def parse_product_page(html):
             data['specifications'] = specs
         
     except Exception as e:
-        print(f"⚠️  Error parsing product page: {e}")
+        print(f"Error parsing product page: {e}")
     
     return data
 
@@ -309,7 +309,7 @@ def parse_product_page(html):
 def enrich_items_with_product_data(items_data, product_htmls):
 
     print("\n" + "="*70)
-    print("🔄 DATA ENRICHMENT")
+    print("DATA ENRICHMENT")
     print("="*70)
     
     enriched_items = []

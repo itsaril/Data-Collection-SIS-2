@@ -32,21 +32,6 @@ def scrape_page(driver, url, page_num):
     print(f"Page {page_num}: {url}")
     print(f"{'='*70}")
     driver.get(url)
-    
-    if page_num == 1:
-        print("CAPTCHA check...")
-        time.sleep(3)
-        
-        if "challenge" in driver.current_url or "captcha" in driver.page_source.lower():
-            print("\n" + "="*70)
-            print("CAPTCHA DETECTED!")
-            print("Please solve the CAPTCHA manually in an open browser.")
-            print("After solving the CAPTCHA, press Enter in the console...")
-            print("="*70)
-            input("Press Enter after solving the CAPTCHA: ")
-            time.sleep(2)
-    else:
-        time.sleep(2)
 
     print("Waiting for goods to load...")
     try:

@@ -2694,3 +2694,822 @@ ImportError: attempted relative import with no known parent package
 [2025-12-04T13:25:24.966+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:25:24.965+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-12-04T13:25:24.993+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:25:24.993+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
 [2025-12-04T13:25:25.022+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.664 seconds
+[2025-12-04T13:25:55.373+0000] {processor.py:161} INFO - Started process (PID=1639) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:25:55.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:25:55.377+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:25:55.376+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:25:55.811+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:25:55.848+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:25:55.847+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:25:55.876+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:25:55.875+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:25:55.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.545 seconds
+[2025-12-04T13:26:26.290+0000] {processor.py:161} INFO - Started process (PID=1644) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:26:26.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:26:26.295+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:26:26.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:26:26.686+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:26:26.735+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:26:26.734+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:26:26.770+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:26:26.769+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:26:26.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.530 seconds
+[2025-12-04T13:26:56.996+0000] {processor.py:161} INFO - Started process (PID=1649) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:26:56.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:26:57.000+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:26:56.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:26:57.384+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:26:57.437+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:26:57.436+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:26:57.482+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:26:57.481+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:26:57.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.535 seconds
+[2025-12-04T13:27:27.898+0000] {processor.py:161} INFO - Started process (PID=1654) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:27:27.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:27:27.901+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:27:27.901+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:27:28.284+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:27:28.323+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:27:28.322+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:27:28.351+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:27:28.351+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:27:28.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.490 seconds
+[2025-12-04T13:27:58.710+0000] {processor.py:161} INFO - Started process (PID=1659) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:27:58.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:27:58.713+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:27:58.712+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:27:59.117+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:27:59.163+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:27:59.162+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:27:59.195+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:27:59.195+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:27:59.224+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.523 seconds
+[2025-12-04T13:28:29.787+0000] {processor.py:161} INFO - Started process (PID=1664) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:28:29.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:28:29.790+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:28:29.790+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:28:30.154+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:28:30.200+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:28:30.199+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:28:30.236+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:28:30.236+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:28:30.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.494 seconds
+[2025-12-04T13:29:00.687+0000] {processor.py:161} INFO - Started process (PID=1669) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:29:00.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:29:00.693+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:29:00.692+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:29:01.083+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:29:01.122+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:29:01.122+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:29:01.152+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:29:01.151+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:29:01.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.518 seconds
+[2025-12-04T13:29:31.373+0000] {processor.py:161} INFO - Started process (PID=1674) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:29:31.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:29:31.377+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:29:31.376+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:29:31.733+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:29:31.770+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:29:31.769+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:29:31.796+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:29:31.796+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:29:31.829+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.466 seconds
+[2025-12-04T13:30:02.143+0000] {processor.py:161} INFO - Started process (PID=1679) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:30:02.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:30:02.147+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:30:02.146+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:30:02.522+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:30:02.568+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:30:02.567+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:30:02.599+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:30:02.598+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:30:02.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.507 seconds
+[2025-12-04T13:30:33.011+0000] {processor.py:161} INFO - Started process (PID=1684) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:30:33.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:30:33.014+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:30:33.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:30:33.411+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:30:33.451+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:30:33.450+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:30:33.495+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:30:33.494+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:30:33.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.522 seconds
+[2025-12-04T13:31:03.770+0000] {processor.py:161} INFO - Started process (PID=1689) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:31:03.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:31:03.774+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:31:03.773+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:31:04.118+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:31:04.153+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:31:04.153+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:31:04.183+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:31:04.183+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:31:04.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.458 seconds
+[2025-12-04T13:31:34.611+0000] {processor.py:161} INFO - Started process (PID=1694) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:31:34.613+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:31:34.614+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:31:34.614+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:31:35.005+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:31:35.045+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:31:35.044+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:31:35.090+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:31:35.090+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:31:35.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.519 seconds
+[2025-12-04T13:32:05.522+0000] {processor.py:161} INFO - Started process (PID=1699) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:32:05.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:32:05.526+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:32:05.525+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:32:05.964+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:32:06.004+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:32:06.004+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:32:06.028+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:32:06.028+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:32:06.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.541 seconds
+[2025-12-04T13:32:36.437+0000] {processor.py:161} INFO - Started process (PID=1704) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:32:36.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:32:36.442+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:32:36.441+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:32:36.842+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:32:36.878+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:32:36.878+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:32:36.905+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:32:36.904+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:32:36.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.507 seconds
+[2025-12-04T13:33:07.334+0000] {processor.py:161} INFO - Started process (PID=1709) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:33:07.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:33:07.337+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:33:07.337+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:33:07.787+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:33:07.831+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:33:07.830+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:33:07.862+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:33:07.861+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:33:07.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.574 seconds
+[2025-12-04T13:33:38.224+0000] {processor.py:161} INFO - Started process (PID=1714) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:33:38.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:33:38.227+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:33:38.226+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:33:38.633+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:33:38.685+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:33:38.685+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:33:38.714+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:33:38.714+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:33:38.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.528 seconds
+[2025-12-04T13:34:08.984+0000] {processor.py:161} INFO - Started process (PID=1719) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:34:08.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:34:08.987+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:34:08.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:34:09.368+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:34:09.409+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:34:09.409+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:34:09.445+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:34:09.444+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:34:09.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.503 seconds
+[2025-12-04T13:34:39.800+0000] {processor.py:161} INFO - Started process (PID=1724) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:34:39.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:34:39.803+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:34:39.802+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:34:40.140+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:34:40.182+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:34:40.182+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:34:40.220+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:34:40.220+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:34:40.258+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.467 seconds
+[2025-12-04T13:35:10.598+0000] {processor.py:161} INFO - Started process (PID=1729) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:35:10.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:35:10.602+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:35:10.601+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:35:11.024+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:35:11.079+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:35:11.078+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:35:11.117+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:35:11.116+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:35:11.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.564 seconds
+[2025-12-04T13:35:41.499+0000] {processor.py:161} INFO - Started process (PID=1734) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:35:41.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:35:41.503+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:35:41.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:35:41.868+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:35:41.918+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:35:41.918+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:35:41.944+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:35:41.944+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:35:41.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.487 seconds
+[2025-12-04T13:36:12.249+0000] {processor.py:161} INFO - Started process (PID=1739) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:36:12.250+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:36:12.252+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:36:12.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:36:12.621+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:36:12.672+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:36:12.672+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:36:12.717+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:36:12.716+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:36:12.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.515 seconds
+[2025-12-04T13:36:43.098+0000] {processor.py:161} INFO - Started process (PID=1744) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:36:43.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:36:43.101+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:36:43.101+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:36:43.579+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:36:43.620+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:36:43.620+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:36:43.650+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:36:43.649+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:36:43.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.587 seconds
+[2025-12-04T13:37:13.847+0000] {processor.py:161} INFO - Started process (PID=1749) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:37:13.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:37:13.850+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:37:13.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:37:14.203+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:37:14.257+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:37:14.257+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:37:14.283+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:37:14.283+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:37:14.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.473 seconds
+[2025-12-04T13:37:44.668+0000] {processor.py:161} INFO - Started process (PID=1754) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:37:44.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:37:44.672+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:37:44.671+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:37:45.048+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:37:45.096+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:37:45.095+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:37:45.129+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:37:45.129+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:37:45.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.504 seconds
+[2025-12-04T13:38:15.685+0000] {processor.py:161} INFO - Started process (PID=1759) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:38:15.686+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:38:15.689+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:38:15.688+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:38:16.079+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:38:16.122+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:38:16.122+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:38:16.171+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:38:16.171+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:38:16.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.547 seconds
+[2025-12-04T13:38:46.595+0000] {processor.py:161} INFO - Started process (PID=1764) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:38:46.597+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:38:46.600+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:38:46.599+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:38:47.041+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:38:47.093+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:38:47.093+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:38:47.131+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:38:47.131+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:38:47.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.599 seconds
+[2025-12-04T13:39:17.497+0000] {processor.py:161} INFO - Started process (PID=1769) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:39:17.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:39:17.500+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:39:17.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:39:17.865+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:39:17.908+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:39:17.907+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:39:17.944+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:39:17.944+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:39:17.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.490 seconds
+[2025-12-04T13:39:48.311+0000] {processor.py:161} INFO - Started process (PID=1774) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:39:48.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:39:48.316+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:39:48.316+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:39:48.704+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:39:48.748+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:39:48.747+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:39:48.787+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:39:48.787+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:39:48.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.522 seconds
+[2025-12-04T13:40:19.107+0000] {processor.py:161} INFO - Started process (PID=1779) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:40:19.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:40:19.111+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:40:19.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:40:19.573+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:40:19.614+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:40:19.613+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:40:19.648+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:40:19.647+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:40:19.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.608 seconds
+[2025-12-04T13:40:50.097+0000] {processor.py:161} INFO - Started process (PID=1784) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:40:50.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:40:50.101+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:40:50.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:40:50.478+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:40:50.516+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:40:50.516+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:40:50.549+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:40:50.549+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:40:50.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.498 seconds
+[2025-12-04T13:41:20.762+0000] {processor.py:161} INFO - Started process (PID=1789) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:41:20.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:41:20.765+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:41:20.765+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:41:21.236+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:41:21.275+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:41:21.274+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:41:21.305+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:41:21.305+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:41:21.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.590 seconds
+[2025-12-04T13:41:51.735+0000] {processor.py:161} INFO - Started process (PID=1794) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:41:51.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:41:51.739+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:41:51.739+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:41:52.145+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:41:52.195+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:41:52.194+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:41:52.236+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:41:52.235+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:41:52.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.549 seconds
+[2025-12-04T13:42:22.493+0000] {processor.py:161} INFO - Started process (PID=1799) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:42:22.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:42:22.496+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:42:22.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:42:22.849+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:42:22.893+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:42:22.893+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:42:22.921+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:42:22.921+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:42:22.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.467 seconds
+[2025-12-04T13:42:53.330+0000] {processor.py:161} INFO - Started process (PID=1804) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:42:53.331+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:42:53.333+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:42:53.332+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:42:53.809+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:42:53.849+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:42:53.849+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:42:53.877+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:42:53.877+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:42:53.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.586 seconds
+[2025-12-04T13:43:24.630+0000] {processor.py:161} INFO - Started process (PID=1809) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:43:24.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:43:24.632+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:43:24.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:43:25.145+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:43:25.185+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:43:25.184+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:43:25.235+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:43:25.234+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:43:25.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.649 seconds
+[2025-12-04T13:43:55.605+0000] {processor.py:161} INFO - Started process (PID=1814) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:43:55.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:43:55.610+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:43:55.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:43:56.179+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:43:56.238+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:43:56.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:43:56.286+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:43:56.285+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:43:56.329+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.739 seconds
+[2025-12-04T13:44:26.688+0000] {processor.py:161} INFO - Started process (PID=1819) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:44:26.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:44:26.692+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:44:26.691+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:44:27.119+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:44:27.165+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:44:27.164+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:44:27.201+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:44:27.201+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:44:27.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.562 seconds
+[2025-12-04T13:44:57.429+0000] {processor.py:161} INFO - Started process (PID=1824) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:44:57.431+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:44:57.433+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:44:57.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:44:57.824+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:44:57.866+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:44:57.865+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:44:57.899+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:44:57.899+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:44:57.936+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.517 seconds
+[2025-12-04T13:45:28.279+0000] {processor.py:161} INFO - Started process (PID=1829) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:45:28.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:45:28.283+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:45:28.282+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:45:28.642+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:45:28.679+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:45:28.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:45:28.710+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:45:28.710+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:45:28.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.478 seconds
+[2025-12-04T13:45:59.080+0000] {processor.py:161} INFO - Started process (PID=1834) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:45:59.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:45:59.083+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:45:59.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:45:59.519+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:45:59.559+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:45:59.558+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:45:59.588+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:45:59.587+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:45:59.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.552 seconds
+[2025-12-04T13:46:29.969+0000] {processor.py:161} INFO - Started process (PID=1839) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:46:29.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:46:29.973+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:46:29.972+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:46:30.369+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:46:30.409+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:46:30.409+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:46:30.444+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:46:30.444+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:46:30.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.508 seconds
+[2025-12-04T13:47:00.781+0000] {processor.py:161} INFO - Started process (PID=1844) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:47:00.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:47:00.783+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:47:00.783+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:47:01.137+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:47:01.176+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:47:01.176+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:47:01.204+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:47:01.204+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:47:01.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.468 seconds
+[2025-12-04T13:47:31.640+0000] {processor.py:161} INFO - Started process (PID=1849) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:47:31.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:47:31.644+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:47:31.644+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:47:32.121+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:47:32.237+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:47:32.236+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:47:32.269+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:47:32.269+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:47:32.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.680 seconds
+[2025-12-04T13:48:02.775+0000] {processor.py:161} INFO - Started process (PID=1854) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:48:02.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:48:02.781+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:48:02.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:48:03.740+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:48:03.887+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:48:03.886+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:48:03.975+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:48:03.974+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:48:04.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 1.312 seconds
+[2025-12-04T13:48:34.728+0000] {processor.py:161} INFO - Started process (PID=1859) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:48:34.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:48:34.731+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:48:34.730+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:48:35.124+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:48:35.164+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:48:35.163+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:48:35.193+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:48:35.192+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:48:35.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.506 seconds
+[2025-12-04T13:49:05.357+0000] {processor.py:161} INFO - Started process (PID=1864) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:49:05.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:49:05.360+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:49:05.360+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:49:05.731+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:49:05.769+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:49:05.768+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:49:05.797+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:49:05.797+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:49:05.829+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.487 seconds
+[2025-12-04T13:49:36.196+0000] {processor.py:161} INFO - Started process (PID=1869) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:49:36.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:49:36.199+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:49:36.199+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:49:36.598+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:49:36.658+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:49:36.658+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:49:36.691+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:49:36.690+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:49:36.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.550 seconds
+[2025-12-04T13:50:07.181+0000] {processor.py:161} INFO - Started process (PID=1874) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:50:07.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:50:07.185+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:50:07.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:50:07.589+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:50:07.631+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:50:07.630+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:50:07.660+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:50:07.659+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:50:07.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.517 seconds
+[2025-12-04T13:50:38.035+0000] {processor.py:161} INFO - Started process (PID=1879) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:50:38.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:50:38.038+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:50:38.038+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:50:38.438+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:50:38.486+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:50:38.485+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:50:38.521+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:50:38.520+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:50:38.559+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.537 seconds
+[2025-12-04T13:51:08.989+0000] {processor.py:161} INFO - Started process (PID=1884) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:51:08.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:51:08.993+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:51:08.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:51:09.500+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:51:09.549+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:51:09.549+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:51:09.576+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:51:09.576+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:51:09.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.631 seconds
+[2025-12-04T13:51:39.927+0000] {processor.py:161} INFO - Started process (PID=1889) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:51:39.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:51:39.930+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:51:39.929+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:51:40.320+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:51:40.359+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:51:40.358+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:51:40.404+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:51:40.403+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:51:40.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.530 seconds
+[2025-12-04T13:52:10.835+0000] {processor.py:161} INFO - Started process (PID=1894) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:52:10.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:52:10.840+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:52:10.839+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:52:11.248+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:52:11.290+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:52:11.287+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:52:11.322+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:52:11.322+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:52:11.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.531 seconds
+[2025-12-04T13:52:41.545+0000] {processor.py:161} INFO - Started process (PID=1899) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:52:41.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:52:41.549+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:52:41.548+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:52:41.957+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:52:41.997+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:52:41.997+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:52:42.024+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:52:42.024+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:52:42.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.517 seconds
+[2025-12-04T13:53:12.937+0000] {processor.py:161} INFO - Started process (PID=1904) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:53:12.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:53:12.941+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:53:12.940+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:53:13.458+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:53:13.508+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:53:13.507+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:53:13.546+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:53:13.546+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:53:13.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.647 seconds
+[2025-12-04T13:53:43.940+0000] {processor.py:161} INFO - Started process (PID=1909) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:53:43.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:53:43.943+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:53:43.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:53:44.388+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:53:44.430+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:53:44.429+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:53:44.463+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:53:44.463+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:53:44.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.565 seconds
+[2025-12-04T13:54:14.644+0000] {processor.py:161} INFO - Started process (PID=1914) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:54:14.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:54:14.647+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:54:14.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:54:15.051+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:54:15.090+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:54:15.089+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:54:15.129+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:54:15.128+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:54:15.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.522 seconds
+[2025-12-04T13:54:45.551+0000] {processor.py:161} INFO - Started process (PID=1919) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:54:45.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:54:45.554+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:54:45.554+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:54:46.003+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:54:46.043+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:54:46.043+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:54:46.072+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:54:46.071+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:54:46.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.572 seconds
+[2025-12-04T13:55:16.483+0000] {processor.py:161} INFO - Started process (PID=1924) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:55:16.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:55:16.486+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:55:16.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:55:16.874+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:55:16.916+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:55:16.915+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:55:16.965+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:55:16.965+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:55:17.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.528 seconds
+[2025-12-04T13:55:47.359+0000] {processor.py:161} INFO - Started process (PID=1929) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:55:47.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:55:47.361+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:55:47.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:55:47.683+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:55:47.726+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:55:47.725+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:55:47.766+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:55:47.765+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:55:47.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.458 seconds
+[2025-12-04T13:56:18.151+0000] {processor.py:161} INFO - Started process (PID=1934) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:56:18.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:56:18.155+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:56:18.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:56:18.546+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:56:18.597+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:56:18.597+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:56:18.634+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:56:18.634+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:56:18.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.540 seconds
+[2025-12-04T13:56:49.072+0000] {processor.py:161} INFO - Started process (PID=1939) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:56:49.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:56:49.075+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:56:49.075+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:56:49.426+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:56:49.469+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:56:49.468+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:56:49.508+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:56:49.508+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:56:49.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.484 seconds
+[2025-12-04T13:57:19.833+0000] {processor.py:161} INFO - Started process (PID=1944) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:57:19.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:57:19.835+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:57:19.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:57:20.217+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:57:20.285+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:57:20.284+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:57:20.332+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:57:20.331+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:57:20.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.537 seconds
+[2025-12-04T13:57:50.779+0000] {processor.py:161} INFO - Started process (PID=1949) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:57:50.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:57:50.782+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:57:50.781+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:57:51.253+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:57:51.290+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:57:51.289+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:57:51.328+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:57:51.328+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:57:51.369+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.605 seconds
+[2025-12-04T13:58:21.898+0000] {processor.py:161} INFO - Started process (PID=1954) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:58:21.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:58:21.902+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:58:21.901+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:58:22.228+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:58:22.279+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:58:22.278+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:58:22.309+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:58:22.309+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:58:22.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.450 seconds
+[2025-12-04T13:58:52.713+0000] {processor.py:161} INFO - Started process (PID=1959) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:58:52.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:58:52.717+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:58:52.716+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:58:53.082+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:58:53.123+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:58:53.122+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:58:53.153+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:58:53.152+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:58:53.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.482 seconds
+[2025-12-04T13:59:23.530+0000] {processor.py:161} INFO - Started process (PID=1964) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:59:23.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:59:23.534+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:59:23.534+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:59:23.954+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:59:24.000+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:59:24.000+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:59:24.029+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:59:24.028+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:59:24.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.551 seconds
+[2025-12-04T13:59:54.495+0000] {processor.py:161} INFO - Started process (PID=1969) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:59:54.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T13:59:54.500+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:59:54.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:59:54.973+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T13:59:55.008+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:59:55.007+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T13:59:55.040+0000] {logging_mixin.py:188} INFO - [2025-12-04T13:59:55.040+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T13:59:55.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.600 seconds
+[2025-12-04T14:00:25.170+0000] {processor.py:161} INFO - Started process (PID=1974) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:00:25.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:00:25.173+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:00:25.173+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:00:25.549+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:00:25.587+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:00:25.587+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:00:25.614+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:00:25.614+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:00:25.643+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.485 seconds
+[2025-12-04T14:00:55.992+0000] {processor.py:161} INFO - Started process (PID=1979) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:00:55.993+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:00:55.995+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:00:55.994+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:00:56.361+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:00:56.402+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:00:56.401+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:00:56.438+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:00:56.438+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:00:56.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.484 seconds
+[2025-12-04T14:01:26.852+0000] {processor.py:161} INFO - Started process (PID=1984) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:01:26.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:01:26.855+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:01:26.855+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:01:27.461+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:01:27.556+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:01:27.555+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:01:27.607+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:01:27.606+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:01:27.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.816 seconds
+[2025-12-04T14:01:58.091+0000] {processor.py:161} INFO - Started process (PID=1989) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:01:58.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:01:58.095+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:01:58.095+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:01:58.448+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:01:58.493+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:01:58.492+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:01:58.528+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:01:58.527+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:01:58.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.493 seconds
+[2025-12-04T14:02:28.847+0000] {processor.py:161} INFO - Started process (PID=1994) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:02:28.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:02:28.850+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:02:28.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:02:29.196+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:02:29.238+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:02:29.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:02:29.270+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:02:29.270+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:02:29.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.472 seconds
+[2025-12-04T14:02:59.722+0000] {processor.py:161} INFO - Started process (PID=1999) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:02:59.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:02:59.725+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:02:59.725+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:03:00.067+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:03:00.109+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:03:00.108+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:03:00.143+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:03:00.142+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:03:00.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.467 seconds
+[2025-12-04T14:03:31.059+0000] {processor.py:161} INFO - Started process (PID=2004) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:03:31.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:03:31.062+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:03:31.062+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:03:31.531+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:03:31.574+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:03:31.574+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:03:31.607+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:03:31.606+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:03:31.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.594 seconds
+[2025-12-04T14:04:02.062+0000] {processor.py:161} INFO - Started process (PID=2009) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:04:02.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:04:02.066+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:04:02.065+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:04:02.406+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:04:02.448+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:04:02.447+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:04:02.487+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:04:02.487+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:04:02.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.474 seconds
+[2025-12-04T14:04:32.680+0000] {processor.py:161} INFO - Started process (PID=2014) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:04:32.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:04:32.684+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:04:32.684+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:04:33.093+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:04:33.130+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:04:33.129+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:04:33.160+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:04:33.159+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:04:33.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.522 seconds
+[2025-12-04T14:05:03.534+0000] {processor.py:161} INFO - Started process (PID=2019) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:05:03.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:05:03.537+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:05:03.537+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:05:03.900+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:05:03.940+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:05:03.939+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:05:03.975+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:05:03.975+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:05:04.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.496 seconds
+[2025-12-04T14:05:34.431+0000] {processor.py:161} INFO - Started process (PID=2024) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:05:34.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:05:34.434+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:05:34.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:05:34.906+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:05:34.948+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:05:34.947+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:05:34.994+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:05:34.994+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:05:35.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.623 seconds
+[2025-12-04T14:06:05.201+0000] {processor.py:161} INFO - Started process (PID=2029) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:06:05.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:06:05.204+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:06:05.204+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:06:05.604+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:06:05.649+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:06:05.648+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:06:05.682+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:06:05.682+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:06:05.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.535 seconds
+[2025-12-04T14:06:36.080+0000] {processor.py:161} INFO - Started process (PID=2034) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:06:36.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:06:36.083+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:06:36.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:06:36.459+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:06:36.497+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:06:36.497+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:06:36.531+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:06:36.531+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:06:36.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.500 seconds
+[2025-12-04T14:07:06.981+0000] {processor.py:161} INFO - Started process (PID=2039) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:07:06.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:07:06.985+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:07:06.984+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:07:07.443+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:07:07.483+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:07:07.482+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:07:07.513+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:07:07.513+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:07:07.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.571 seconds
+[2025-12-04T14:07:37.737+0000] {processor.py:161} INFO - Started process (PID=2044) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:07:37.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:07:37.743+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:07:37.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:07:38.141+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:07:38.180+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:07:38.179+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:07:38.211+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:07:38.211+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:07:38.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.533 seconds
+[2025-12-04T14:08:09.080+0000] {processor.py:161} INFO - Started process (PID=2049) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:08:09.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:08:09.083+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:08:09.083+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:08:09.484+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:08:09.527+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:08:09.526+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:08:09.564+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:08:09.564+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:08:09.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.524 seconds
+[2025-12-04T14:08:39.973+0000] {processor.py:161} INFO - Started process (PID=2054) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:08:39.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:08:39.976+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:08:39.975+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:08:40.333+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:08:40.381+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:08:40.380+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:08:40.420+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:08:40.419+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:08:40.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.493 seconds
+[2025-12-04T14:09:10.858+0000] {processor.py:161} INFO - Started process (PID=2059) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:09:10.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:09:10.862+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:09:10.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:09:11.261+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:09:11.307+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:09:11.306+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:09:11.357+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:09:11.356+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:09:11.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.563 seconds
+[2025-12-04T14:09:41.656+0000] {processor.py:161} INFO - Started process (PID=2064) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:09:41.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:09:41.659+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:09:41.659+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:09:42.021+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:09:42.055+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:09:42.054+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:09:42.080+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:09:42.080+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:09:42.119+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.476 seconds
+[2025-12-04T14:10:12.560+0000] {processor.py:161} INFO - Started process (PID=2069) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:10:12.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:10:12.563+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:10:12.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:10:12.988+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:10:13.030+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:10:13.030+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:10:13.064+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:10:13.064+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:10:13.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.554 seconds
+[2025-12-04T14:10:43.384+0000] {processor.py:161} INFO - Started process (PID=2074) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:10:43.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:10:43.387+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:10:43.387+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:10:43.764+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:10:43.806+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:10:43.804+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:10:43.840+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:10:43.840+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:10:43.867+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.494 seconds
+[2025-12-04T14:11:14.249+0000] {processor.py:161} INFO - Started process (PID=2079) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:11:14.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:11:14.253+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:11:14.252+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:11:14.640+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:11:14.690+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:11:14.689+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:11:14.725+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:11:14.724+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:11:14.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.539 seconds
+[2025-12-04T14:11:45.100+0000] {processor.py:161} INFO - Started process (PID=2084) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:11:45.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:11:45.103+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:11:45.102+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:11:45.471+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:11:45.517+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:11:45.517+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:11:45.552+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:11:45.551+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:11:45.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.501 seconds
+[2025-12-04T14:12:16.007+0000] {processor.py:161} INFO - Started process (PID=2089) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:12:16.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:12:16.010+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:12:16.010+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:12:16.426+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:12:16.478+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:12:16.477+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:12:16.507+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:12:16.507+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:12:16.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.548 seconds
+[2025-12-04T14:12:46.835+0000] {processor.py:161} INFO - Started process (PID=2094) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:12:46.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:12:46.839+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:12:46.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:12:47.298+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:12:47.351+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:12:47.351+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:12:47.384+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:12:47.383+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:12:47.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.603 seconds
+[2025-12-04T14:13:18.149+0000] {processor.py:161} INFO - Started process (PID=2099) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:13:18.150+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:13:18.152+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:13:18.151+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:13:18.537+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:13:18.586+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:13:18.586+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:13:18.622+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:13:18.621+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:13:18.654+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.516 seconds
+[2025-12-04T14:13:49.056+0000] {processor.py:161} INFO - Started process (PID=2104) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:13:49.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:13:49.060+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:13:49.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:13:49.481+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:13:49.524+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:13:49.523+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:13:49.596+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:13:49.595+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:13:49.648+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.605 seconds
+[2025-12-04T14:14:19.921+0000] {processor.py:161} INFO - Started process (PID=2109) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:14:19.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:14:19.927+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:14:19.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:14:20.285+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:14:20.323+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:14:20.323+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:14:20.350+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:14:20.349+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:14:20.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.476 seconds
+[2025-12-04T14:14:50.723+0000] {processor.py:161} INFO - Started process (PID=2114) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:14:50.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:14:50.727+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:14:50.726+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:14:51.121+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:14:51.159+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:14:51.159+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:14:51.198+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:14:51.197+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:14:51.224+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.508 seconds
+[2025-12-04T14:15:21.601+0000] {processor.py:161} INFO - Started process (PID=2119) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:15:21.602+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:15:21.604+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:15:21.603+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:15:22.004+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:15:22.060+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:15:22.060+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:15:22.114+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:15:22.113+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:15:22.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.569 seconds
+[2025-12-04T14:15:52.302+0000] {processor.py:161} INFO - Started process (PID=2124) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:15:52.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:15:52.304+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:15:52.304+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:15:52.726+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:15:52.774+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:15:52.773+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:15:52.807+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:15:52.807+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:15:52.840+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.548 seconds
+[2025-12-04T14:16:23.243+0000] {processor.py:161} INFO - Started process (PID=2129) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:16:23.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:16:23.246+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:16:23.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:16:23.742+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:16:23.814+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:16:23.813+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:16:23.875+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:16:23.874+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:16:23.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.698 seconds
+[2025-12-04T14:16:54.329+0000] {processor.py:161} INFO - Started process (PID=2134) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:16:54.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:16:54.332+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:16:54.332+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:16:54.843+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:16:54.898+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:16:54.897+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:16:54.930+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:16:54.930+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:16:54.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.647 seconds
+[2025-12-04T14:17:25.256+0000] {processor.py:161} INFO - Started process (PID=2139) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:17:25.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:17:25.263+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:17:25.260+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:17:25.777+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:17:25.814+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:17:25.814+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:17:25.883+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:17:25.882+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:17:25.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.700 seconds
+[2025-12-04T14:17:56.347+0000] {processor.py:161} INFO - Started process (PID=2144) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:17:56.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:17:56.349+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:17:56.349+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:17:56.763+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:17:56.803+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:17:56.803+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:17:56.839+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:17:56.839+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:17:56.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.546 seconds
+[2025-12-04T14:18:27.152+0000] {processor.py:161} INFO - Started process (PID=2149) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:18:27.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:18:27.155+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:18:27.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:18:27.565+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:18:27.611+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:18:27.610+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:18:27.648+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:18:27.648+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:18:27.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.546 seconds
+[2025-12-04T14:18:58.034+0000] {processor.py:161} INFO - Started process (PID=2154) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:18:58.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:18:58.037+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:18:58.036+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:18:58.511+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:18:58.591+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:18:58.591+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:18:58.619+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:18:58.619+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:18:58.657+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.631 seconds
+[2025-12-04T14:19:28.837+0000] {processor.py:161} INFO - Started process (PID=2159) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:19:28.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:19:28.840+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:19:28.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:19:29.254+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:19:29.312+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:19:29.312+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:19:29.377+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:19:29.377+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:19:29.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.585 seconds
+[2025-12-04T14:19:59.789+0000] {processor.py:161} INFO - Started process (PID=2164) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:19:59.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:19:59.793+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:19:59.793+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:20:00.454+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:20:00.517+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:20:00.516+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:20:00.581+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:20:00.581+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:20:00.643+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.874 seconds
+[2025-12-04T14:20:31.210+0000] {processor.py:161} INFO - Started process (PID=2169) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:20:31.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:20:31.271+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:20:31.270+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:20:32.019+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:20:32.088+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:20:32.088+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:20:32.146+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:20:32.146+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:20:32.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 1.040 seconds
+[2025-12-04T14:21:02.434+0000] {processor.py:161} INFO - Started process (PID=2174) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:21:02.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:21:02.437+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:21:02.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:21:02.827+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:21:02.900+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:21:02.899+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:21:02.954+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:21:02.954+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:21:02.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.570 seconds
+[2025-12-04T14:21:33.563+0000] {processor.py:161} INFO - Started process (PID=2179) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:21:33.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:21:33.566+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:21:33.566+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:21:34.017+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:21:34.096+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:21:34.094+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:21:34.143+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:21:34.142+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:21:34.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.619 seconds
+[2025-12-04T14:22:04.508+0000] {processor.py:161} INFO - Started process (PID=2184) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:22:04.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:22:04.511+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:22:04.511+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:22:04.735+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:22:04.767+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:22:04.766+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:22:04.792+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:22:04.791+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:22:04.811+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.316 seconds
+[2025-12-04T14:22:35.063+0000] {processor.py:161} INFO - Started process (PID=2189) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:22:35.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:22:35.065+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:22:35.065+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:22:35.388+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:22:35.449+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:22:35.448+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:22:35.511+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:22:35.511+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:22:35.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.501 seconds
+[2025-12-04T14:23:05.832+0000] {processor.py:161} INFO - Started process (PID=2194) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:23:05.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:23:05.834+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:23:05.833+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:23:06.064+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:23:06.094+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:23:06.093+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:23:06.120+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:23:06.120+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:23:06.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.320 seconds
+[2025-12-04T14:23:36.365+0000] {processor.py:161} INFO - Started process (PID=2199) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:23:36.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:23:36.367+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:23:36.367+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:23:36.592+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:23:36.623+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:23:36.623+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:23:36.647+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:23:36.647+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:23:36.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.311 seconds
+[2025-12-04T14:24:06.867+0000] {processor.py:161} INFO - Started process (PID=2204) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:24:06.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:24:06.869+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:24:06.869+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:24:07.080+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:24:07.107+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:24:07.107+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:24:07.127+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:24:07.127+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:24:07.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.286 seconds
+[2025-12-04T14:24:37.412+0000] {processor.py:161} INFO - Started process (PID=2209) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:24:37.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:24:37.414+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:24:37.414+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:24:37.634+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:24:37.661+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:24:37.661+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:24:37.686+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:24:37.685+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:24:37.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.302 seconds
+[2025-12-04T14:25:07.989+0000] {processor.py:161} INFO - Started process (PID=2214) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:25:07.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:25:07.991+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:25:07.991+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:25:08.204+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:25:08.231+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:25:08.230+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:25:08.250+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:25:08.250+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:25:08.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.293 seconds
+[2025-12-04T14:25:38.557+0000] {processor.py:161} INFO - Started process (PID=2219) to work on /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:25:38.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow_dag.py for tasks to queue
+[2025-12-04T14:25:38.559+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:25:38.558+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:25:38.794+0000] {processor.py:840} INFO - DAG(s) 'ebay_scraper_pipeline' retrieved from /opt/airflow/dags/airflow_dag.py
+[2025-12-04T14:25:38.828+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:25:38.827+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T14:25:38.852+0000] {logging_mixin.py:188} INFO - [2025-12-04T14:25:38.851+0000] {dag.py:3954} INFO - Setting next_dagrun for ebay_scraper_pipeline to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T14:25:38.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow_dag.py took 0.323 seconds

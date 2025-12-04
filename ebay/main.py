@@ -13,10 +13,10 @@ def main(search_query="laptop", max_items=100, save_html=True, enrich_data=True)
     print("=" * 70)
     print("        EBAY SCRAPER - FULL CYCLE")
     print("=" * 70)
-    print(f"\n🔍 Search query: {search_query}")
-    print(f"📊 Goal: minimum {max_items} goods")
-    print(f"💾 Saving HTML: {'Yes' if save_html else 'No'}")
-    print(f"🔄 Data enrichment: {'Yes' if enrich_data else 'No'}")
+    print(f"\n Search query: {search_query}")
+    print(f" Goal: minimum {max_items} goods")
+    print(f" Saving HTML: {'Yes' if save_html else 'No'}")
+    print(f" Data enrichment: {'Yes' if enrich_data else 'No'}")
     print()
     print("\n" + "="*70)
     print("Step 1: LOADING PAGES")
@@ -29,7 +29,7 @@ def main(search_query="laptop", max_items=100, save_html=True, enrich_data=True)
     )
     
     if not html_pages:
-        print("\n❌ Failed to load pages!")
+        print("\n Failed to load pages!")
         return None
     
     print("\n" + "="*70)
@@ -39,7 +39,7 @@ def main(search_query="laptop", max_items=100, save_html=True, enrich_data=True)
     items_data = parse_html_pages(html_pages)
     
     if not items_data:
-        print("\n❌ Failed to parse data!")
+        print("\n Failed to parse data!")
         return None
     
 
@@ -88,13 +88,13 @@ def main(search_query="laptop", max_items=100, save_html=True, enrich_data=True)
         print(f"   URL: {item['item_url'][:70]}...")
 
     print("\n" + "="*70)
-    print("✅ Parsing Completed!")
+    print("Parsing Completed!")
     print("="*70)
-    print(f"📄 Pages loaded: {len(html_pages)}")
-    print(f"📦 Products found: {stats['total_items']}")
-    print(f"💾 JSON saved: {json_filename}")
-    print(f"🗄️ Database: {db_name}")
-    print(f"📊 Records in the database: {stats['db_records_saved']}")
+    print(f"Pages loaded: {len(html_pages)}")
+    print(f"Products found: {stats['total_items']}")
+    print(f"JSON saved: {json_filename}")
+    print(f"Database: {db_name}")
+    print(f"Records in the database: {stats['db_records_saved']}")
     print("="*70)
     
     return stats
@@ -103,15 +103,15 @@ if __name__ == "__main__":
     print("\n" + "="*70)
     print(" EBAY SCRAPER - Modular Architecture")
     print("="*70)
-    print("\n📦 Modules:")
+    print("\n Modules:")
     print(" • src/scraper.py - Downloading pages via Selenium")
     print(" • src/cleaner.py - Parsing HTML and extracting data")
     print(" • src/loader.py - Saving to JSON and SQLite")
-    print("\n✨ New Features:")
+    print("\n New Features:")
     print(" • Data enrichment - downloading product pages for detailed information")
     print(" • Random delays between requests (2-5 seconds)")
     print(" • Parsing: seller, rating, sales, views, characteristics")
-    print("\n📚 Dependencies:")
+    print("\n Dependencies:")
     print(" pip install selenium webdriver-manager beautifulsoup4")
     print()
     
@@ -125,7 +125,7 @@ if __name__ == "__main__":
         try:
             max_items = int(sys.argv[2])
         except ValueError:
-            print("⚠️  Invalid max_items format, using 100")
+            print(" Invalid max_items format, using 100")
     if len(sys.argv) > 3:
         enrich_data = sys.argv[3].lower() in ['true', 'yes', '1', 'да']
 
