@@ -146,7 +146,7 @@ def remove_duplicates(items):
         else:
             duplicates_count += 1
     
-    print(f"   🗑️  Duplicates removed: {duplicates_count}")
+    print(f"Duplicates removed: {duplicates_count}")
     
     return unique_items
 
@@ -301,7 +301,7 @@ def parse_product_page(html):
             data['specifications'] = specs
         
     except Exception as e:
-        print(f"⚠️  Error parsing product page: {e}")
+        print(f"Error parsing product page: {e}")
     
     return data
 
@@ -309,7 +309,7 @@ def parse_product_page(html):
 def enrich_items_with_product_data(items_data, product_htmls):
 
     print("\n" + "="*70)
-    print("🔄 DATA ENRICHMENT")
+    print("DATA ENRICHMENT")
     print("="*70)
     
     enriched_items = []
@@ -328,12 +328,12 @@ def enrich_items_with_product_data(items_data, product_htmls):
             
             print(f"[{idx}/{len(items_data)}] ✓ Enriched: +{len(product_data)} fields")
         else:
-            print(f"[{idx}/{len(items_data)}] ⚠️  Omitted (no HTML)")
+            print(f"[{idx}/{len(items_data)}] Omitted (no HTML)")
         
         enriched_items.append(enriched_item)
     
     print("="*70)
-    print(f"✅ ENRICHMENT COMPLETED")
+    print(f"ENRICHMENT COMPLETED")
     print("="*70)
     
     return enriched_items
@@ -454,37 +454,37 @@ def parse_html_pages(html_pages):
         items = parse_items(html)
         all_items.extend(items)
         print(f"✓ Products found: {len(items)}")
-        print(f"📊 Total collected: {len(all_items)}")
+        print(f"Total collected: {len(all_items)}")
     
     print(f"\n{'='*70}")
     print("Data cleaning and normalization...")
     print(f"{'='*70}")
 
-    print(f"\n📋 Initial quantity of goods: {len(all_items)}")
+    print(f"\nInitial quantity of goods: {len(all_items)}")
     valid_items = [item for item in all_items if is_valid_item(item)]
     invalid_count = len(all_items) - len(valid_items)
     if invalid_count > 0:
-        print(f"   ❌ Invalid products removed: {invalid_count}")
+        print(f" Invalid products removed: {invalid_count}")
     
-    print(f"\n🧹 Data clearing...")
+    print(f"\nData clearing...")
     cleaned_items = [clean_item_data(item) for item in valid_items]
     print(f"   ✓ Items cleared: {len(cleaned_items)}")
 
-    print(f"\n🔍 Removing duplicates...")
+    print(f"\nRemoving duplicates...")
     unique_items = remove_duplicates(cleaned_items)
     print(f"   ✓ Unique products: {len(unique_items)}")
     
     final_items = [item for item in unique_items if is_valid_item(item)]
 
     print(f"\n{'='*70}")
-    print("📊 CLEANING STATISTICS:")
+    print("CLEANING STATISTICS:")
     print(f"{'='*70}")
     print(f"   Original goods:     {len(all_items)}")
     print(f"   Invalid:           -{invalid_count}")
     print(f"   After cleaning:        {len(cleaned_items)}")
     print(f"   Duplicates removed:   -{len(cleaned_items) - len(unique_items)}")
     print(f"   TOTAL:                {len(final_items)}")
-    print(f"\n📈 DATA COMPLETENESS:")
+    print(f"\nDATA COMPLETENESS:")
     print(f"{'='*70}")
     
     if final_items:
@@ -495,7 +495,7 @@ def parse_html_pages(html_pages):
             print(f"   {field:20s}: {filled:4d}/{len(final_items)} ({percentage:.1f}%)")
     
     print(f"{'='*70}")
-    print(f"✅ Parsing complete! Total products: {len(final_items)}")
+    print(f"Parsing complete! Total products: {len(final_items)}")
     print(f"{'='*70}")
     
     return final_items

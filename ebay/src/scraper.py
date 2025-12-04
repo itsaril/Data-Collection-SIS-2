@@ -95,7 +95,7 @@ def scrape_product_page(driver, url, item_index, total_items):
         return html
         
     except Exception as e:
-        print(f"[{item_index}/{total_items}] ❌ error: {e}")
+        print(f"[{item_index}/{total_items}] error: {e}")
         return None
 
 
@@ -117,7 +117,7 @@ def scrape_product_pages(items_data, save_html=True):
             url = item.get('item_url')
             
             if not url:
-                print(f"[{idx}/{len(items_data)}] ⚠️  Missing: No URL")
+                print(f"[{idx}/{len(items_data)}]  Missing: No URL")
                 product_htmls.append(None)
                 continue
 
@@ -133,9 +133,9 @@ def scrape_product_pages(items_data, save_html=True):
                 try:
                     with open(filename, 'w', encoding='utf-8') as f:
                         f.write(html)
-                    print(f"[{idx}/{len(items_data)}] 💾 Saved: {filename}")
+                    print(f"[{idx}/{len(items_data)}] Saved: {filename}")
                 except Exception as e:
-                    print(f"[{idx}/{len(items_data)}] ⚠️  Failed to save: {e}")
+                    print(f"[{idx}/{len(items_data)}]  Failed to save: {e}")
         
         print("\n" + "="*70)
         print(f"✅ DOWNLOAD COMPLETED")
@@ -195,7 +195,7 @@ def scrape_ebay(search_query="laptop", max_items=100, save_html=True):
         return html_pages
         
     except Exception as e:
-        print(f"\n❌ Error loading: {e}")
+        print(f"\n Error loading: {e}")
         import traceback
         traceback.print_exc()
         return html_pages
@@ -213,4 +213,4 @@ if __name__ == "__main__":
     print()
     
     html_pages = scrape_ebay(search_query="laptop", max_items=100, save_html=True)
-    print(f"\n✅ Loaded {len(html_pages)} pages")
+    print(f"\n Loaded {len(html_pages)} pages")

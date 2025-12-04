@@ -38,7 +38,7 @@ def create_database(db_name='ebay_products.db'):
 def save_to_database(items_data, search_query, db_name='ebay_products.db'):
 
     if not items_data:
-        print("⚠️  There is no data to save to the database.")
+        print(" There is no data to save to the database.")
         return 0
     
     conn = sqlite3.connect(db_name)
@@ -117,14 +117,14 @@ def save_to_database(items_data, search_query, db_name='ebay_products.db'):
         except sqlite3.IntegrityError:
             continue
         except Exception as e:
-            print(f"⚠️  Error saving product: {e}")
+            print(f" Error saving product: {e}")
             continue
     
     conn.commit()
     conn.close()
     
     print(f"\n{'='*70}")
-    print(f"💾 Saving to the database '{db_name}':")
+    print(f"Saving to the database '{db_name}':")
     print(f"   ✓ New entries added: {inserted}")
     print(f"   ✓ Updated records: {updated}")
     print(f"   ✓ Total in the database: {get_total_records(db_name)}")
@@ -153,7 +153,7 @@ def save_to_json(items_data, filename='ebay_results.json'):
         print(f"✓ Data is stored in JSON: {filename}")
         return True
     except Exception as e:
-        print(f"❌ Error saving JSON: {e}")
+        print(f"Error saving JSON: {e}")
         return False
 
 
@@ -201,7 +201,7 @@ if __name__ == "__main__":
         create_database()
         save_to_database(items_data, search_query)
         
-        print(f"\n✅ Done! Total in the database: {get_total_records()}")
+        print(f"\nDone! Total in the database: {get_total_records()}")
     else:
         print("Usage: python loader.py <json_file> [search_query]")
         print("Example: python loader.py ebay_laptop_results.json laptop")

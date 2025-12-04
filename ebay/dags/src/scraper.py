@@ -29,7 +29,7 @@ def setup_driver():
 def scrape_page(driver, url, page_num):
 
     print(f"\n{'='*70}")
-    print(f"📄 Page {page_num}: {url}")
+    print(f"Page {page_num}: {url}")
     print(f"{'='*70}")
     driver.get(url)
     
@@ -39,7 +39,7 @@ def scrape_page(driver, url, page_num):
         
         if "challenge" in driver.current_url or "captcha" in driver.page_source.lower():
             print("\n" + "="*70)
-            print("⚠️  CAPTCHA DETECTED!")
+            print("CAPTCHA DETECTED!")
             print("Please solve the CAPTCHA manually in an open browser.")
             print("After solving the CAPTCHA, press Enter in the console...")
             print("="*70)
@@ -54,7 +54,7 @@ def scrape_page(driver, url, page_num):
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.su-card-container")))
         print("✓ Products loaded!")
     except Exception as e:
-        print(f"⚠️  Unable to wait for items to load: {e}")
+        print(f"Unable to wait for items to load: {e}")
         print("We continue with the current content of the page...")
 
     print("Scrolling the page...")
@@ -95,7 +95,7 @@ def scrape_product_page(driver, url, item_index, total_items):
         return html
         
     except Exception as e:
-        print(f"[{item_index}/{total_items}] ❌ error: {e}")
+        print(f"[{item_index}/{total_items}] error: {e}")
         return None
 
 
@@ -106,7 +106,7 @@ def scrape_product_pages(items_data, save_html=True):
     
     try:
         print("\n" + "="*70)
-        print("🌐 LOADING PRODUCT PAGES")
+        print("LOADING PRODUCT PAGES")
         print("="*70)
         print(f"Total products: {len(items_data)}")
         print(f"Average latency: 3-4 seconds between requests")
@@ -117,7 +117,7 @@ def scrape_product_pages(items_data, save_html=True):
             url = item.get('item_url')
             
             if not url:
-                print(f"[{idx}/{len(items_data)}] ⚠️  Missing: No URL")
+                print(f"[{idx}/{len(items_data)}] Missing: No URL")
                 product_htmls.append(None)
                 continue
 
@@ -133,12 +133,12 @@ def scrape_product_pages(items_data, save_html=True):
                 try:
                     with open(filename, 'w', encoding='utf-8') as f:
                         f.write(html)
-                    print(f"[{idx}/{len(items_data)}] 💾 Saved: {filename}")
+                    print(f"[{idx}/{len(items_data)}] Saved: {filename}")
                 except Exception as e:
-                    print(f"[{idx}/{len(items_data)}] ⚠️  Failed to save: {e}")
+                    print(f"[{idx}/{len(items_data)}]  Failed to save: {e}")
         
         print("\n" + "="*70)
-        print(f"✅ DOWNLOAD COMPLETED")
+        print(f" DOWNLOAD COMPLETED")
         print(f"Succes: {sum(1 for h in product_htmls if h is not None)}/{len(items_data)}")
         print("="*70)
         
@@ -181,21 +181,21 @@ def scrape_ebay(search_query="laptop", max_items=100, save_html=True):
             estimated_items = page_num * 60  
             total_items_found = estimated_items
             
-            print(f"📊 Approximately collected: ~{total_items_found} goods")
+            print(f" Approximately collected: ~{total_items_found} goods")
 
             if total_items_found >= max_items:
-                print(f"\n✅ The approximate quantity of goods has been reached")
+                print(f"\n The approximate quantity of goods has been reached")
                 break
 
             page_num += 1
-            print(f"\n⏩ Go to page{page_num}...")
+            print(f"\n Go to page{page_num}...")
             time.sleep(2)  
         
         print(f"\n✓ Pages loaded: {len(html_pages)}")
         return html_pages
         
     except Exception as e:
-        print(f"\n❌ Error loading: {e}")
+        print(f"\n Error loading: {e}")
         import traceback
         traceback.print_exc()
         return html_pages
@@ -213,4 +213,4 @@ if __name__ == "__main__":
     print()
     
     html_pages = scrape_ebay(search_query="laptop", max_items=100, save_html=True)
-    print(f"\n✅ Loaded {len(html_pages)} pages")
+    print(f"\n Loaded {len(html_pages)} pages")
