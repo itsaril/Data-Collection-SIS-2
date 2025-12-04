@@ -1,0 +1,62 @@
+[2025-12-03T15:16:44.979+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-03T15:16:45.001+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.cleaning manual__2025-12-03T15:16:25.229530+00:00 [queued]>
+[2025-12-03T15:16:45.006+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.cleaning manual__2025-12-03T15:16:25.229530+00:00 [queued]>
+[2025-12-03T15:16:45.006+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-12-03T15:16:45.014+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): cleaning> on 2025-12-03 15:16:25.229530+00:00
+[2025-12-03T15:16:45.018+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ebay_scraper_pipeline', 'cleaning', 'manual__2025-12-03T15:16:25.229530+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpbpwgyjiu']
+[2025-12-03T15:16:45.020+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask cleaning
+[2025-12-03T15:16:45.020+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=516) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-03T15:16:45.021+0000] {standard_task_runner.py:63} INFO - Started process 517 to run task
+[2025-12-03T15:16:45.060+0000] {task_command.py:426} INFO - Running <TaskInstance: ebay_scraper_pipeline.cleaning manual__2025-12-03T15:16:25.229530+00:00 [running]> on host 561ed983102f
+[2025-12-03T15:16:45.118+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ebay_scraper_pipeline' AIRFLOW_CTX_TASK_ID='cleaning' AIRFLOW_CTX_EXECUTION_DATE='2025-12-03T15:16:25.229530+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-03T15:16:25.229530+00:00'
+[2025-12-03T15:16:45.118+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-03T15:16:45.127+0000] {airflow_dag.py:48} INFO - 🧹 START CLEANING TASK
+[2025-12-03T15:16:45.148+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-03T15:16:45.149+0000] {logging_mixin.py:188} INFO - Парсинг HTML страниц...
+[2025-12-03T15:16:45.149+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T15:16:45.149+0000] {logging_mixin.py:188} INFO - 
+Парсинг страницы 1/1...
+[2025-12-03T15:16:45.410+0000] {logging_mixin.py:188} INFO - Найдено карточек товаров: 68
+[2025-12-03T15:16:45.436+0000] {logging_mixin.py:188} INFO - ✓ Найдено товаров: 66
+[2025-12-03T15:16:45.437+0000] {logging_mixin.py:188} INFO - 📊 Всего собрано: 66
+[2025-12-03T15:16:45.437+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-03T15:16:45.437+0000] {logging_mixin.py:188} INFO - Очистка и нормализация данных...
+[2025-12-03T15:16:45.437+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T15:16:45.438+0000] {logging_mixin.py:188} INFO - 
+📋 Исходное количество товаров: 66
+[2025-12-03T15:16:45.438+0000] {logging_mixin.py:188} INFO - 
+🧹 Очистка данных...
+[2025-12-03T15:16:45.444+0000] {logging_mixin.py:188} INFO -    ✓ Очищено товаров: 66
+[2025-12-03T15:16:45.444+0000] {logging_mixin.py:188} INFO - 
+🔍 Удаление дубликатов...
+[2025-12-03T15:16:45.445+0000] {logging_mixin.py:188} INFO -    🗑️  Удалено дубликатов: 4
+[2025-12-03T15:16:45.445+0000] {logging_mixin.py:188} INFO -    ✓ Уникальных товаров: 62
+[2025-12-03T15:16:45.445+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-03T15:16:45.445+0000] {logging_mixin.py:188} INFO - 📊 СТАТИСТИКА ОЧИСТКИ:
+[2025-12-03T15:16:45.445+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO -    Исходных товаров:     66
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO -    Невалидных:           -0
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO -    После очистки:        66
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO -    Дубликатов удалено:   -4
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO -    ИТОГО:                62
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO - 
+📈 ПОЛНОТА ДАННЫХ:
+[2025-12-03T15:16:45.446+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T15:16:45.447+0000] {logging_mixin.py:188} INFO -    price               :   52/62 (83.9%)
+[2025-12-03T15:16:45.447+0000] {logging_mixin.py:188} INFO -    condition           :   34/62 (54.8%)
+[2025-12-03T15:16:45.447+0000] {logging_mixin.py:188} INFO -    location            :    7/62 (11.3%)
+[2025-12-03T15:16:45.447+0000] {logging_mixin.py:188} INFO -    shipping_price      :    0/62 (0.0%)
+[2025-12-03T15:16:45.448+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T15:16:45.448+0000] {logging_mixin.py:188} INFO - ✅ Парсинг завершен! Всего товаров: 62
+[2025-12-03T15:16:45.448+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T15:16:45.450+0000] {airflow_dag.py:64} INFO - ✅ CLEANING DONE. Clean items: 62
+[2025-12-03T15:16:45.450+0000] {airflow_dag.py:65} INFO - 💾 CLEAN DATA SAVED TO: /opt/***/dags/clean_items.json
+[2025-12-03T15:16:45.451+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-12-03T15:16:45.451+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-03T15:16:45.458+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ebay_scraper_pipeline, task_id=cleaning, run_id=manual__2025-12-03T15:16:25.229530+00:00, execution_date=20251203T151625, start_date=20251203T151645, end_date=20251203T151645
+[2025-12-03T15:16:45.474+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-12-03T15:16:45.488+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-03T15:16:45.490+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
