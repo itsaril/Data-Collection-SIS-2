@@ -2,10 +2,11 @@ import sqlite3
 import json
 import os
 
+
 def create_database(db_name='ebay_products.db'):
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
-
+    
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS products (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -24,21 +25,27 @@ def create_database(db_name='ebay_products.db'):
             specifications TEXT
         )
     ''')
-
-    cursor.execute('''CREATE INDEX IF NOT EXISTS idx_scraped_at ON products(scraped_at)''') 
-    cursor.execute('''CREATE INDEX IF NOT EXISTS idx_search_query ON products(search_query)''')
     
-    cursor.execute('''CREATE INDEX IF NOT EXISTS idx_price ON products(price)''')
+    cursor.execute('''
+        CREATE INDEX IF NOT EXISTS idx_scraped_at ON products(scraped_at)
+    ''')
+    
+    cursor.execute('''
+        CREATE INDEX IF NOT EXISTS idx_search_query ON products(search_query)
+    ''')
+    
+    cursor.execute('''
+        CREATE INDEX IF NOT EXISTS idx_price ON products(price)
+    ''')
     
     conn.commit()
     conn.close()
-    print(f"✓ Database '{db_name}' created/updated")
+    print(f"✓ База данных '{db_name}' создана/обновлена")
 
 
 def save_to_database(items_data, search_query, db_name='ebay_products.db'):
-
     if not items_data:
-        print(" There is no data to save to the database.")
+        print("⚠️  Нет данных для сохранения в базу")
         return 0
     
     conn = sqlite3.connect(db_name)
@@ -117,17 +124,17 @@ def save_to_database(items_data, search_query, db_name='ebay_products.db'):
         except sqlite3.IntegrityError:
             continue
         except Exception as e:
-            print(f" Error saving product: {e}")
+            print(f"⚠️  Ошибка при сохранении товара: {e}")
             continue
     
     conn.commit()
     conn.close()
     
     print(f"\n{'='*70}")
-    print(f"Saving to the database '{db_name}':")
-    print(f"   ✓ New entries added: {inserted}")
-    print(f"   ✓ Updated records: {updated}")
-    print(f"   ✓ Total in the database: {get_total_records(db_name)}")
+    print(f"💾 Сохранение в базу данных '{db_name}':")
+    print(f"   ✓ Добавлено новых записей: {inserted}")
+    print(f"   ✓ Обновлено записей: {updated}")
+    print(f"   ✓ Всего в базе: {get_total_records(db_name)}")
     print(f"{'='*70}")
     
     return inserted + updated
@@ -146,20 +153,18 @@ def get_total_records(db_name='ebay_products.db'):
 
 
 def save_to_json(items_data, filename='ebay_results.json'):
-
     try:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(items_data, f, ensure_ascii=False, indent=2)
-        print(f"✓ Data is stored in JSON: {filename}")
+        print(f"✓ Данные сохранены в JSON: {filename}")
         return True
     except Exception as e:
-        print(f"Error saving JSON: {e}")
+        print(f"❌ Ошибка при сохранении JSON: {e}")
         return False
 
 
 def load_and_save(items_data, search_query, save_json=True, save_db=True, 
                   json_filename='ebay_results.json', db_name='ebay_products.db'):
-
     stats = {
         'total_items': len(items_data),
         'json_saved': False,
@@ -167,41 +172,13 @@ def load_and_save(items_data, search_query, save_json=True, save_db=True,
     }
     
     print("\n" + "="*70)
-    print("Saving data...")
+    print("Сохранение данных...")
     print("="*70)
     
     if save_json:
         stats['json_saved'] = save_to_json(items_data, json_filename)
-
     if save_db:
         create_database(db_name)
         stats['db_records_saved'] = save_to_database(items_data, search_query, db_name)
     
     return stats
-
-
-if __name__ == "__main__":
-    print("=" * 70)
-    print("        EBAY LOADER - Saving data")
-    print("=" * 70)
-    print()
-    
-    import sys
-    
-    if len(sys.argv) > 1:
-        json_file = sys.argv[1]
-        search_query = sys.argv[2] if len(sys.argv) > 2 else 'unknown'
-        
-        print(f"Saving data from: {json_file}")
-        with open(json_file, 'r', encoding='utf-8') as f:
-            items_data = json.load(f)
-        
-        print(f"✓ Loaded {len(items_data)} records")
-
-        create_database()
-        save_to_database(items_data, search_query)
-        
-        print(f"\nDone! Total in the database: {get_total_records()}")
-    else:
-        print("Usage: python loader.py <json_file> [search_query]")
-        print("Example: python loader.py ebay_laptop_results.json laptop")

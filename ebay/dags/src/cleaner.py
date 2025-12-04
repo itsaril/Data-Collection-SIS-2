@@ -3,13 +3,14 @@ from datetime import datetime
 import re
 import hashlib
 
+
 import hashlib
 
-def normalize_text(text):
 
+def normalize_text(text):
     if not text or text in ["N/A", "Unknown", ""]:
         return None
-
+    
     text = ' '.join(text.split())
     text = text.strip()
     
@@ -17,7 +18,6 @@ def normalize_text(text):
 
 
 def normalize_price(price):
-
     if price is None or price == 0:
         return None
     
@@ -29,7 +29,6 @@ def normalize_price(price):
 
 
 def normalize_condition(condition):
-
     if not condition or condition == "Unknown":
         return None
     
@@ -46,7 +45,6 @@ def normalize_condition(condition):
 
 
 def normalize_location(location):
-
     if not location or location == "Unknown":
         return None
     
@@ -57,22 +55,20 @@ def normalize_location(location):
 
 
 def normalize_currency(currency):
-
     if not currency:
         return "USD"
     
     currency = currency.upper().strip()
-   
+    
     valid_currencies = ["USD", "EUR", "GBP", "RUB", "CNY"]
     
     return currency if currency in valid_currencies else "USD"
 
 
 def normalize_url(url):
-
     if not url or url == "N/A":
         return None
-
+    
     if '&' in url:
         url = url.split('&')[0]
     
@@ -80,7 +76,6 @@ def normalize_url(url):
 
 
 def normalize_datetime(dt_string):
-
     if not dt_string:
         return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
@@ -92,7 +87,6 @@ def normalize_datetime(dt_string):
 
 
 def clean_item_data(item):
-
     cleaned = {
         'title': normalize_text(item.get('title')),
         'price': normalize_price(item.get('price')),
@@ -101,18 +95,17 @@ def clean_item_data(item):
         'seller_name': normalize_text(item.get('seller_name')),
         'location': normalize_location(item.get('location')),
         'shipping_price': normalize_price(item.get('shipping_price')),
-        'rating': normalize_price(item.get('rating')),  
+        'rating': normalize_price(item.get('rating')),
         'reviews_count': int(item.get('reviews_count', 0)) if item.get('reviews_count') else None,
         'item_url': normalize_url(item.get('item_url')),
         'scraped_at': normalize_datetime(item.get('scraped_at')),
-        'specifications': item.get('specifications')  
+        'specifications': item.get('specifications')
     }
     
     return cleaned
 
 
 def is_valid_item(item):
-
     return (
         item.get('title') is not None and
         item.get('item_url') is not None and
@@ -121,7 +114,6 @@ def is_valid_item(item):
 
 
 def get_item_hash(item):
-
     url = item.get('item_url', '')
     if not url:
         unique_string = f"{item.get('title', '')}_{item.get('price', 0)}"
@@ -132,7 +124,6 @@ def get_item_hash(item):
 
 
 def remove_duplicates(items):
-
     seen_hashes = set()
     unique_items = []
     duplicates_count = 0
@@ -146,7 +137,7 @@ def remove_duplicates(items):
         else:
             duplicates_count += 1
     
-    print(f" Duplicates removed: {duplicates_count}")
+    print(f"   🗑️  Удалено дубликатов: {duplicates_count}")
     
     return unique_items
 
@@ -156,7 +147,6 @@ def parse_raw_price(raw_price):
         price_str = re.sub(r'[^\d.,]', '', raw_price)
 
         if ',' in price_str and '.' in price_str:
-
             last_comma = price_str.rfind(',')
             last_dot = price_str.rfind('.')
             if last_comma > last_dot:
@@ -165,7 +155,7 @@ def parse_raw_price(raw_price):
                 price_str = price_str.replace(',', '')
         elif ',' in price_str:
             parts = price_str.split(',')
-            if len(parts[-1]) == 2:  
+            if len(parts[-1]) == 2:
                 price_str = price_str.replace(',', '.')
             else:
                 price_str = price_str.replace(',', '')
@@ -205,7 +195,7 @@ def parse_product_page(html):
                                         match = re.search(r'([\d,]+)', sold_text)
                                         if match:
                                             data['reviews_count'] = int(match.group(1).replace(',', ''))
-
+                
                 if 'ABOUT_THIS_ITEM' in json_data:
                     about_section = json_data['ABOUT_THIS_ITEM']
                     if 'sections' in about_section and 'features' in about_section['sections']:
@@ -217,7 +207,7 @@ def parse_product_page(html):
                                     label = ''
                                     if item['labels'] and 'textSpans' in item['labels'][0]:
                                         label = item['labels'][0]['textSpans'][0].get('text', '')
-
+                                    
                                     value = ''
                                     if item['values'] and 'textSpans' in item['values'][0]:
                                         value = item['values'][0]['textSpans'][0].get('text', '')
@@ -230,6 +220,7 @@ def parse_product_page(html):
                 
             except (json.JSONDecodeError, KeyError, TypeError, AttributeError):
                 continue
+        
         seller_elem = soup.select_one('div.x-sellercard-atf__info__about-seller a')
         if seller_elem:
             data['seller_name'] = normalize_text(seller_elem.get_text())
@@ -240,14 +231,14 @@ def parse_product_page(html):
             match = re.search(r'\((\d+)\)', feedback_text)
             if match:
                 data['seller_feedback_count'] = int(match.group(1))
-
+        
         positive_elem = soup.select_one('span.ux-textspans--POSITIVE')
         if positive_elem:
             positive_text = positive_elem.get_text()
             match = re.search(r'([\d.]+)%', positive_text)
             if match:
                 data['seller_positive_feedback'] = float(match.group(1))
-
+        
         location_elem = soup.select_one('div.ux-labels-values--shipping span.ux-textspans--SECONDARY')
         if location_elem:
             data['item_location'] = normalize_location(location_elem.get_text())
@@ -262,18 +253,18 @@ def parse_product_page(html):
                 if match:
                     price_str = match.group(1).replace(',', '')
                     data['shipping_price'] = float(price_str)
-
+        
         condition_elem = soup.select_one('div.x-item-condition-text span.ux-textspans')
         if condition_elem:
             data['condition'] = normalize_condition(condition_elem.get_text())
-
+        
         quantity_sold_elem = soup.select_one('span.ux-textspans--SECONDARY[data-testid="qty-sold"]')
         if quantity_sold_elem:
             sold_text = quantity_sold_elem.get_text()
             match = re.search(r'([\d,]+)', sold_text)
             if match:
                 data['quantity_sold'] = int(match.group(1).replace(',', ''))
-
+        
         views_elem = soup.select_one('span.ux-textspans--SECONDARY[class*="views"]')
         if views_elem:
             views_text = views_elem.get_text()
@@ -284,7 +275,7 @@ def parse_product_page(html):
         description_elem = soup.select_one('div.ux-layout-section__item--description')
         if description_elem:
             data['description'] = normalize_text(description_elem.get_text())
-
+        
         specs = {}
         spec_rows = soup.select('div.ux-labels-values')
         for row in spec_rows:
@@ -301,15 +292,14 @@ def parse_product_page(html):
             data['specifications'] = specs
         
     except Exception as e:
-        print(f"Error parsing product page: {e}")
+        print(f"⚠️  Ошибка парсинга страницы товара: {e}")
     
     return data
 
 
 def enrich_items_with_product_data(items_data, product_htmls):
-
     print("\n" + "="*70)
-    print("DATA ENRICHMENT")
+    print("🔄 ОБОГАЩЕНИЕ ДАННЫХ")
     print("="*70)
     
     enriched_items = []
@@ -319,34 +309,32 @@ def enrich_items_with_product_data(items_data, product_htmls):
         
         if html:
             product_data = parse_product_page(html)
-
+            
             for key, value in product_data.items():
                 if value is not None:
-
                     if key not in enriched_item or enriched_item.get(key) is None or enriched_item.get(key) == 'Unknown':
                         enriched_item[key] = value
             
-            print(f"[{idx}/{len(items_data)}] ✓ Enriched: +{len(product_data)} fields")
+            print(f"[{idx}/{len(items_data)}] ✓ Обогащено: +{len(product_data)} полей")
         else:
-            print(f"[{idx}/{len(items_data)}] Omitted (no HTML)")
+            print(f"[{idx}/{len(items_data)}] ⚠️  Пропущено (нет HTML)")
         
         enriched_items.append(enriched_item)
     
     print("="*70)
-    print(f"ENRICHMENT COMPLETED")
+    print(f"✅ ОБОГАЩЕНИЕ ЗАВЕРШЕНО")
     print("="*70)
     
     return enriched_items
 
 
 def parse_items(html_content):
-
     soup = BeautifulSoup(html_content, 'html.parser')
-
+    
     cards = soup.find_all('div', class_='su-card-container')
     data = []
     
-    print(f'Product cards found: {len(cards)}')
+    print(f'Найдено карточек товаров: {len(cards)}')
     
     for idx, card in enumerate(cards):
         try:
@@ -356,21 +344,21 @@ def parse_items(html_content):
                 title_elem = card.find('div', class_='s-card__title')
             if title_elem:
                 title = title_elem.get_text(strip=True)
-                title = title.replace('New ad', '').replace('Opens in a new window or tab', '').strip()
+                title = title.replace('Новое объявление', '').replace('Открывается в новом окне или вкладке', '').strip()
             
             if title in ["N/A", "Shop on eBay", ""]:
                 continue
-
+            
             price_elem = card.find('span', class_='s-card__price')
             price_text = price_elem.get_text(strip=True) if price_elem else "$0"
             price = parse_raw_price(price_text)
-
+            
             currency = "USD"
             if "EUR" in price_text or "€" in price_text:
                 currency = "EUR"
             elif "GBP" in price_text or "£" in price_text:
                 currency = "GBP"
-
+            
             condition = "Unknown"
             subtitle_elem = card.find('div', class_='s-card__subtitle')
             if subtitle_elem:
@@ -381,9 +369,9 @@ def parse_items(html_content):
                     condition = "Refurbished"
                 elif 'Б/у' in subtitle_text or 'Used' in subtitle_text or 'Pre-Owned' in subtitle_text:
                     condition = "Used"
-            
-            seller_name = "Unknown"
 
+            seller_name = "Unknown"
+            
             location = "Unknown"
             all_spans = card.find_all('span', class_='su-styled-text')
             for span in all_spans:
@@ -405,9 +393,9 @@ def parse_items(html_content):
                     break
             
             rating = 0
-
+            
             reviews_count = 0
-
+            
             item_url = "N/A"
             link_elem = card.find_parent('a')
             if not link_elem:
@@ -416,7 +404,7 @@ def parse_items(html_content):
                 item_url = link_elem.get('href')
                 if len(item_url) > 200:
                     item_url = item_url.split('&itmprp=')[0]
-
+            
             scraped_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
             item_data = {
@@ -436,7 +424,7 @@ def parse_items(html_content):
             data.append(item_data)
             
         except Exception as e:
-            print(f'Card parsing error #{idx}: {e}')
+            print(f'Ошибка парсинга карточки #{idx}: {e}')
             continue
     
     return data
@@ -446,45 +434,49 @@ def parse_html_pages(html_pages):
     all_items = []
     
     print("\n" + "="*70)
-    print("Parsing HTML pages...")
+    print("Парсинг HTML страниц...")
     print("="*70)
     
     for idx, html in enumerate(html_pages, 1):
-        print(f"\nParsing pages {idx}/{len(html_pages)}...")
+        print(f"\nПарсинг страницы {idx}/{len(html_pages)}...")
         items = parse_items(html)
         all_items.extend(items)
-        print(f"✓ Products found: {len(items)}")
-        print(f"Total collected: {len(all_items)}")
+        print(f"✓ Найдено товаров: {len(items)}")
+        print(f"📊 Всего собрано: {len(all_items)}")
     
     print(f"\n{'='*70}")
-    print("Data cleaning and normalization...")
+    print("Очистка и нормализация данных...")
     print(f"{'='*70}")
+    
 
-    print(f"\nInitial quantity of goods: {len(all_items)}")
+    print(f"\n📋 Исходное количество товаров: {len(all_items)}")
     valid_items = [item for item in all_items if is_valid_item(item)]
     invalid_count = len(all_items) - len(valid_items)
     if invalid_count > 0:
-        print(f"Invalid products removed: {invalid_count}")
-    
-    print(f"\n Data clearing...")
-    cleaned_items = [clean_item_data(item) for item in valid_items]
-    print(f"   ✓ Items cleared: {len(cleaned_items)}")
+        print(f"   ❌ Удалено невалидных товаров: {invalid_count}")
 
-    print(f"\nRemoving duplicates...")
+
+    print(f"\n🧹 Очистка данных...")
+    cleaned_items = [clean_item_data(item) for item in valid_items]
+    print(f"   ✓ Очищено товаров: {len(cleaned_items)}")
+
+
+    print(f"\n🔍 Удаление дубликатов...")
     unique_items = remove_duplicates(cleaned_items)
-    print(f" Unique products: {len(unique_items)}")
+    print(f"   ✓ Уникальных товаров: {len(unique_items)}")
     
     final_items = [item for item in unique_items if is_valid_item(item)]
-
+    
     print(f"\n{'='*70}")
-    print(" CLEANING STATISTICS:")
+    print("📊 СТАТИСТИКА ОЧИСТКИ:")
     print(f"{'='*70}")
-    print(f"   Original goods:     {len(all_items)}")
-    print(f"   Invalid:           -{invalid_count}")
-    print(f"   After cleaning:        {len(cleaned_items)}")
-    print(f"   Duplicates removed:   -{len(cleaned_items) - len(unique_items)}")
-    print(f"   TOTAL:                {len(final_items)}")
-    print(f"\n DATA COMPLETENESS:")
+    print(f"   Исходных товаров:     {len(all_items)}")
+    print(f"   Невалидных:           -{invalid_count}")
+    print(f"   После очистки:        {len(cleaned_items)}")
+    print(f"   Дубликатов удалено:   -{len(cleaned_items) - len(unique_items)}")
+    print(f"   ИТОГО:                {len(final_items)}")
+    
+    print(f"\n📈 ПОЛНОТА ДАННЫХ:")
     print(f"{'='*70}")
     
     if final_items:
@@ -495,33 +487,7 @@ def parse_html_pages(html_pages):
             print(f"   {field:20s}: {filled:4d}/{len(final_items)} ({percentage:.1f}%)")
     
     print(f"{'='*70}")
-    print(f"Parsing complete! Total products: {len(final_items)}")
+    print(f"✅ Парсинг завершен! Всего товаров: {len(final_items)}")
     print(f"{'='*70}")
     
     return final_items
-
-
-if __name__ == "__main__":
-    print("=" * 70)
-    print("        EBAY CLEANER - parsing HTML")
-    print("=" * 70)
-    print()
-
-    import sys
-    
-    if len(sys.argv) > 1:
-        filename = sys.argv[1]
-        print(f"Loading HTML from a file: {filename}")
-        with open(filename, 'r', encoding='utf-8') as f:
-            html = f.read()
-        
-        items = parse_items(html)
-
-        import json
-        output_file = filename.replace('.html', '_parsed.json')
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(items, f, ensure_ascii=False, indent=2)
-        
-        print(f"\n✓ Data saved in {output_file}")
-    else:
-        print("Usage: python cleaner.py <html_file>")

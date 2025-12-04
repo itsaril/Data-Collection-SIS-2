@@ -1,3 +1,12 @@
+"""
+eBay Scraper Package
+
+Модульная система для парсинга eBay:
+- scraper: Загрузка страниц через Selenium
+- cleaner: Парсинг HTML и извлечение данных
+- loader: Сохранение в JSON и SQLite
+"""
+
 __version__ = '1.0.0'
 __author__ = 'eBay Scraper Team'
 
