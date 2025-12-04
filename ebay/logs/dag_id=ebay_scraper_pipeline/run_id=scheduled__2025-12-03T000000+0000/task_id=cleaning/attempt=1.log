@@ -1,0 +1,134 @@
+[2025-12-04T08:59:14.369+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-04T08:59:14.428+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.cleaning scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T08:59:14.447+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.cleaning scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T08:59:14.448+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-12-04T08:59:14.468+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): cleaning> on 2025-12-03 00:00:00+00:00
+[2025-12-04T08:59:14.486+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1235) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-04T08:59:14.488+0000] {standard_task_runner.py:63} INFO - Started process 1236 to run task
+[2025-12-04T08:59:14.479+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ebay_scraper_pipeline', 'cleaning', 'scheduled__2025-12-03T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpoloow_s6']
+[2025-12-04T08:59:14.490+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask cleaning
+[2025-12-04T08:59:14.577+0000] {task_command.py:426} INFO - Running <TaskInstance: ebay_scraper_pipeline.cleaning scheduled__2025-12-03T00:00:00+00:00 [running]> on host 9bcab6b6b71f
+[2025-12-04T08:59:14.720+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ebay_scraper_pipeline' AIRFLOW_CTX_TASK_ID='cleaning' AIRFLOW_CTX_EXECUTION_DATE='2025-12-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-03T00:00:00+00:00'
+[2025-12-04T08:59:14.722+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-04T08:59:14.754+0000] {airflow_dag.py:48} INFO - 🧹 START CLEANING TASK
+[2025-12-04T08:59:14.866+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T08:59:14.867+0000] {logging_mixin.py:188} INFO - Парсинг HTML страниц...
+[2025-12-04T08:59:14.867+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:14.868+0000] {logging_mixin.py:188} INFO - 
+Парсинг страницы 1/2...
+[2025-12-04T08:59:15.992+0000] {logging_mixin.py:188} INFO - Найдено карточек товаров: 69
+[2025-12-04T08:59:16.025+0000] {logging_mixin.py:188} INFO - ✓ Найдено товаров: 67
+[2025-12-04T08:59:16.026+0000] {logging_mixin.py:188} INFO - 📊 Всего собрано: 67
+[2025-12-04T08:59:16.026+0000] {logging_mixin.py:188} INFO - 
+Парсинг страницы 2/2...
+[2025-12-04T08:59:16.278+0000] {logging_mixin.py:188} INFO - Найдено карточек товаров: 62
+[2025-12-04T08:59:16.310+0000] {logging_mixin.py:188} INFO - ✓ Найдено товаров: 60
+[2025-12-04T08:59:16.311+0000] {logging_mixin.py:188} INFO - 📊 Всего собрано: 127
+[2025-12-04T08:59:16.312+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T08:59:16.313+0000] {logging_mixin.py:188} INFO - Очистка и нормализация данных...
+[2025-12-04T08:59:16.313+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:16.314+0000] {logging_mixin.py:188} INFO - 
+📋 Исходное количество товаров: 127
+[2025-12-04T08:59:16.315+0000] {logging_mixin.py:188} INFO - 
+🧹 Очистка данных...
+[2025-12-04T08:59:16.325+0000] {logging_mixin.py:188} INFO -    ✓ Очищено товаров: 127
+[2025-12-04T08:59:16.326+0000] {logging_mixin.py:188} INFO - 
+🔍 Удаление дубликатов...
+[2025-12-04T08:59:16.327+0000] {logging_mixin.py:188} INFO -    🗑️  Удалено дубликатов: 19
+[2025-12-04T08:59:16.328+0000] {logging_mixin.py:188} INFO -    ✓ Уникальных товаров: 108
+[2025-12-04T08:59:16.328+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T08:59:16.328+0000] {logging_mixin.py:188} INFO - 📊 СТАТИСТИКА ОЧИСТКИ:
+[2025-12-04T08:59:16.329+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:16.329+0000] {logging_mixin.py:188} INFO -    Исходных товаров:     127
+[2025-12-04T08:59:16.329+0000] {logging_mixin.py:188} INFO -    Невалидных:           -0
+[2025-12-04T08:59:16.329+0000] {logging_mixin.py:188} INFO -    После очистки:        127
+[2025-12-04T08:59:16.330+0000] {logging_mixin.py:188} INFO -    Дубликатов удалено:   -19
+[2025-12-04T08:59:16.330+0000] {logging_mixin.py:188} INFO -    ИТОГО:                108
+[2025-12-04T08:59:16.330+0000] {logging_mixin.py:188} INFO - 
+📈 ПОЛНОТА ДАННЫХ:
+[2025-12-04T08:59:16.330+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:16.331+0000] {logging_mixin.py:188} INFO -    price               :   89/108 (82.4%)
+[2025-12-04T08:59:16.331+0000] {logging_mixin.py:188} INFO -    condition           :   54/108 (50.0%)
+[2025-12-04T08:59:16.331+0000] {logging_mixin.py:188} INFO -    location            :   13/108 (12.0%)
+[2025-12-04T08:59:16.331+0000] {logging_mixin.py:188} INFO -    shipping_price      :    0/108 (0.0%)
+[2025-12-04T08:59:16.332+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:16.332+0000] {logging_mixin.py:188} INFO - ✅ Парсинг завершен! Всего товаров: 108
+[2025-12-04T08:59:16.332+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:16.339+0000] {airflow_dag.py:64} INFO - ✅ CLEANING DONE. Clean items: 108
+[2025-12-04T08:59:16.340+0000] {airflow_dag.py:65} INFO - 💾 CLEAN DATA SAVED TO: /opt/***/dags/clean_items.json
+[2025-12-04T08:59:16.343+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-12-04T08:59:16.344+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-04T08:59:16.356+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ebay_scraper_pipeline, task_id=cleaning, run_id=scheduled__2025-12-03T00:00:00+00:00, execution_date=20251203T000000, start_date=20251204T085914, end_date=20251204T085916
+[2025-12-04T08:59:16.396+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-12-04T08:59:16.453+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-04T08:59:16.455+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-12-04T11:45:09.155+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-04T11:45:09.288+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.cleaning scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T11:45:09.326+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.cleaning scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T11:45:09.329+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-12-04T11:45:09.373+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): cleaning> on 2025-12-03 00:00:00+00:00
+[2025-12-04T11:45:09.390+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ebay_scraper_pipeline', 'cleaning', 'scheduled__2025-12-03T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpqidilc7p']
+[2025-12-04T11:45:09.397+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask cleaning
+[2025-12-04T11:45:09.398+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=510) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-04T11:45:09.400+0000] {standard_task_runner.py:63} INFO - Started process 511 to run task
+[2025-12-04T11:45:09.592+0000] {task_command.py:426} INFO - Running <TaskInstance: ebay_scraper_pipeline.cleaning scheduled__2025-12-03T00:00:00+00:00 [running]> on host 0f1a37138325
+[2025-12-04T11:45:09.845+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ebay_scraper_pipeline' AIRFLOW_CTX_TASK_ID='cleaning' AIRFLOW_CTX_EXECUTION_DATE='2025-12-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-03T00:00:00+00:00'
+[2025-12-04T11:45:09.847+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-04T11:45:09.888+0000] {airflow_dag.py:48} INFO - 🧹 START CLEANING TASK
+[2025-12-04T11:45:10.802+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T11:45:10.803+0000] {logging_mixin.py:188} INFO - Парсинг HTML страниц...
+[2025-12-04T11:45:10.804+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:10.804+0000] {logging_mixin.py:188} INFO - 
+Парсинг страницы 1/2...
+[2025-12-04T11:45:11.637+0000] {logging_mixin.py:188} INFO - Найдено карточек товаров: 69
+[2025-12-04T11:45:11.688+0000] {logging_mixin.py:188} INFO - ✓ Найдено товаров: 67
+[2025-12-04T11:45:11.689+0000] {logging_mixin.py:188} INFO - 📊 Всего собрано: 67
+[2025-12-04T11:45:11.690+0000] {logging_mixin.py:188} INFO - 
+Парсинг страницы 2/2...
+[2025-12-04T11:45:12.100+0000] {logging_mixin.py:188} INFO - Найдено карточек товаров: 62
+[2025-12-04T11:45:12.137+0000] {logging_mixin.py:188} INFO - ✓ Найдено товаров: 60
+[2025-12-04T11:45:12.139+0000] {logging_mixin.py:188} INFO - 📊 Всего собрано: 127
+[2025-12-04T11:45:12.139+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T11:45:12.140+0000] {logging_mixin.py:188} INFO - Очистка и нормализация данных...
+[2025-12-04T11:45:12.141+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:12.142+0000] {logging_mixin.py:188} INFO - 
+📋 Исходное количество товаров: 127
+[2025-12-04T11:45:12.142+0000] {logging_mixin.py:188} INFO - 
+🧹 Очистка данных...
+[2025-12-04T11:45:12.151+0000] {logging_mixin.py:188} INFO -    ✓ Очищено товаров: 127
+[2025-12-04T11:45:12.152+0000] {logging_mixin.py:188} INFO - 
+🔍 Удаление дубликатов...
+[2025-12-04T11:45:12.153+0000] {logging_mixin.py:188} INFO -    🗑️  Удалено дубликатов: 20
+[2025-12-04T11:45:12.154+0000] {logging_mixin.py:188} INFO -    ✓ Уникальных товаров: 107
+[2025-12-04T11:45:12.154+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T11:45:12.155+0000] {logging_mixin.py:188} INFO - 📊 СТАТИСТИКА ОЧИСТКИ:
+[2025-12-04T11:45:12.156+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:12.156+0000] {logging_mixin.py:188} INFO -    Исходных товаров:     127
+[2025-12-04T11:45:12.157+0000] {logging_mixin.py:188} INFO -    Невалидных:           -0
+[2025-12-04T11:45:12.157+0000] {logging_mixin.py:188} INFO -    После очистки:        127
+[2025-12-04T11:45:12.158+0000] {logging_mixin.py:188} INFO -    Дубликатов удалено:   -20
+[2025-12-04T11:45:12.158+0000] {logging_mixin.py:188} INFO -    ИТОГО:                107
+[2025-12-04T11:45:12.159+0000] {logging_mixin.py:188} INFO - 
+📈 ПОЛНОТА ДАННЫХ:
+[2025-12-04T11:45:12.159+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:12.159+0000] {logging_mixin.py:188} INFO -    price               :   88/107 (82.2%)
+[2025-12-04T11:45:12.160+0000] {logging_mixin.py:188} INFO -    condition           :   53/107 (49.5%)
+[2025-12-04T11:45:12.160+0000] {logging_mixin.py:188} INFO -    location            :    9/107 (8.4%)
+[2025-12-04T11:45:12.161+0000] {logging_mixin.py:188} INFO -    shipping_price      :    0/107 (0.0%)
+[2025-12-04T11:45:12.162+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:12.162+0000] {logging_mixin.py:188} INFO - ✅ Парсинг завершен! Всего товаров: 107
+[2025-12-04T11:45:12.163+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:12.173+0000] {airflow_dag.py:64} INFO - ✅ CLEANING DONE. Clean items: 107
+[2025-12-04T11:45:12.174+0000] {airflow_dag.py:65} INFO - 💾 CLEAN DATA SAVED TO: /opt/***/dags/clean_items.json
+[2025-12-04T11:45:12.178+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-12-04T11:45:12.179+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-04T11:45:12.196+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ebay_scraper_pipeline, task_id=cleaning, run_id=scheduled__2025-12-03T00:00:00+00:00, execution_date=20251203T000000, start_date=20251204T114509, end_date=20251204T114512
+[2025-12-04T11:45:12.240+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-12-04T11:45:12.270+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-04T11:45:12.273+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

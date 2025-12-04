@@ -1,0 +1,66 @@
+[2025-12-04T08:59:17.876+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-04T08:59:17.905+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.loading scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T08:59:17.914+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.loading scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T08:59:17.915+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-12-04T08:59:17.927+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): loading> on 2025-12-03 00:00:00+00:00
+[2025-12-04T08:59:17.934+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ebay_scraper_pipeline', 'loading', 'scheduled__2025-12-03T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpup7fo5et']
+[2025-12-04T08:59:17.937+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1237) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-04T08:59:17.937+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask loading
+[2025-12-04T08:59:17.937+0000] {standard_task_runner.py:63} INFO - Started process 1243 to run task
+[2025-12-04T08:59:17.995+0000] {task_command.py:426} INFO - Running <TaskInstance: ebay_scraper_pipeline.loading scheduled__2025-12-03T00:00:00+00:00 [running]> on host 9bcab6b6b71f
+[2025-12-04T08:59:18.074+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ebay_scraper_pipeline' AIRFLOW_CTX_TASK_ID='loading' AIRFLOW_CTX_EXECUTION_DATE='2025-12-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-03T00:00:00+00:00'
+[2025-12-04T08:59:18.076+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-04T08:59:18.087+0000] {airflow_dag.py:70} INFO - 💾 START LOADING TASK
+[2025-12-04T08:59:18.090+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T08:59:18.090+0000] {logging_mixin.py:188} INFO - Сохранение данных...
+[2025-12-04T08:59:18.091+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:18.098+0000] {logging_mixin.py:188} INFO - ✓ База данных '/opt/***/dags/ebay_products.db' создана/обновлена
+[2025-12-04T08:59:18.123+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T08:59:18.123+0000] {logging_mixin.py:188} INFO - 💾 Сохранение в базу данных '/opt/***/dags/ebay_products.db':
+[2025-12-04T08:59:18.124+0000] {logging_mixin.py:188} INFO -    ✓ Добавлено новых записей: 38
+[2025-12-04T08:59:18.124+0000] {logging_mixin.py:188} INFO -    ✓ Обновлено записей: 70
+[2025-12-04T08:59:18.130+0000] {logging_mixin.py:188} INFO -    ✓ Всего в базе: 149
+[2025-12-04T08:59:18.130+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T08:59:18.131+0000] {airflow_dag.py:86} INFO - ✅ LOADING DONE SUCCESSFULLY
+[2025-12-04T08:59:18.131+0000] {airflow_dag.py:87} INFO - 📊 LOAD STATS: {'total_items': 108, 'json_saved': False, 'db_records_saved': 108}
+[2025-12-04T08:59:18.132+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-12-04T08:59:18.132+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-04T08:59:18.141+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ebay_scraper_pipeline, task_id=loading, run_id=scheduled__2025-12-03T00:00:00+00:00, execution_date=20251203T000000, start_date=20251204T085917, end_date=20251204T085918
+[2025-12-04T08:59:18.192+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-12-04T08:59:18.207+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-04T08:59:18.209+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-12-04T11:45:12.947+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-04T11:45:13.011+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.loading scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T11:45:13.027+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.loading scheduled__2025-12-03T00:00:00+00:00 [queued]>
+[2025-12-04T11:45:13.028+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-12-04T11:45:13.049+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): loading> on 2025-12-03 00:00:00+00:00
+[2025-12-04T11:45:13.063+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ebay_scraper_pipeline', 'loading', 'scheduled__2025-12-03T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpwjf75i_n']
+[2025-12-04T11:45:13.068+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask loading
+[2025-12-04T11:45:13.070+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=512) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-04T11:45:13.071+0000] {standard_task_runner.py:63} INFO - Started process 513 to run task
+[2025-12-04T11:45:13.190+0000] {task_command.py:426} INFO - Running <TaskInstance: ebay_scraper_pipeline.loading scheduled__2025-12-03T00:00:00+00:00 [running]> on host 0f1a37138325
+[2025-12-04T11:45:13.343+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ebay_scraper_pipeline' AIRFLOW_CTX_TASK_ID='loading' AIRFLOW_CTX_EXECUTION_DATE='2025-12-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-03T00:00:00+00:00'
+[2025-12-04T11:45:13.345+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-04T11:45:13.361+0000] {airflow_dag.py:70} INFO - 💾 START LOADING TASK
+[2025-12-04T11:45:13.370+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T11:45:13.371+0000] {logging_mixin.py:188} INFO - Сохранение данных...
+[2025-12-04T11:45:13.372+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:13.406+0000] {logging_mixin.py:188} INFO - ✓ База данных '/opt/***/dags/ebay_products.db' создана/обновлена
+[2025-12-04T11:45:13.487+0000] {logging_mixin.py:188} INFO - 
+======================================================================
+[2025-12-04T11:45:13.487+0000] {logging_mixin.py:188} INFO - 💾 Сохранение в базу данных '/opt/***/dags/ebay_products.db':
+[2025-12-04T11:45:13.488+0000] {logging_mixin.py:188} INFO -    ✓ Добавлено новых записей: 9
+[2025-12-04T11:45:13.489+0000] {logging_mixin.py:188} INFO -    ✓ Обновлено записей: 98
+[2025-12-04T11:45:13.498+0000] {logging_mixin.py:188} INFO -    ✓ Всего в базе: 158
+[2025-12-04T11:45:13.499+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-04T11:45:13.499+0000] {airflow_dag.py:86} INFO - ✅ LOADING DONE SUCCESSFULLY
+[2025-12-04T11:45:13.500+0000] {airflow_dag.py:87} INFO - 📊 LOAD STATS: {'total_items': 107, 'json_saved': False, 'db_records_saved': 107}
+[2025-12-04T11:45:13.501+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-12-04T11:45:13.503+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-04T11:45:13.516+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ebay_scraper_pipeline, task_id=loading, run_id=scheduled__2025-12-03T00:00:00+00:00, execution_date=20251203T000000, start_date=20251204T114513, end_date=20251204T114513
+[2025-12-04T11:45:13.569+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-12-04T11:45:13.599+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-04T11:45:13.603+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

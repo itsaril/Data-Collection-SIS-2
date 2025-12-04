@@ -1,0 +1,67 @@
+[2025-12-03T14:11:00.397+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-03T14:11:00.421+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.scraping scheduled__2025-12-02T00:00:00+00:00 [queued]>
+[2025-12-03T14:11:00.426+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ebay_scraper_pipeline.scraping scheduled__2025-12-02T00:00:00+00:00 [queued]>
+[2025-12-03T14:11:00.427+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 4
+[2025-12-03T14:11:00.436+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): scraping> on 2025-12-02 00:00:00+00:00
+[2025-12-03T14:11:00.441+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ebay_scraper_pipeline', 'scraping', 'scheduled__2025-12-02T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpc0wmr1pj']
+[2025-12-03T14:11:00.443+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask scraping
+[2025-12-03T14:11:00.443+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=462) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-03T14:11:00.444+0000] {standard_task_runner.py:63} INFO - Started process 463 to run task
+[2025-12-03T14:11:00.492+0000] {task_command.py:426} INFO - Running <TaskInstance: ebay_scraper_pipeline.scraping scheduled__2025-12-02T00:00:00+00:00 [running]> on host 018332a407a3
+[2025-12-03T14:11:00.556+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ebay_scraper_pipeline' AIRFLOW_CTX_TASK_ID='scraping' AIRFLOW_CTX_EXECUTION_DATE='2025-12-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-02T00:00:00+00:00'
+[2025-12-03T14:11:00.557+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-03T14:11:00.565+0000] {airflow_dag.py:28} INFO - 🚀 START SCRAPING TASK
+[2025-12-03T14:11:00.566+0000] {logging_mixin.py:188} INFO - ======================================================================
+[2025-12-03T14:11:00.566+0000] {logging_mixin.py:188} INFO - Запуск браузера...
+[2025-12-03T14:11:00.567+0000] {logging_mixin.py:188} INFO - 
+❌ Ошибка при загрузке: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-12-03T14:11:00.571+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2025-12-03T14:11:00.572+0000] {logging_mixin.py:188} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+[2025-12-03T14:11:00.572+0000] {logging_mixin.py:188} WARNING - ValueError: The path is not a valid file: /usr/local/bin/chromedriver
+[2025-12-03T14:11:00.573+0000] {logging_mixin.py:188} WARNING - 
+The above exception was the direct cause of the following exception:
+[2025-12-03T14:11:00.573+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2025-12-03T14:11:00.573+0000] {logging_mixin.py:188} WARNING -   File "/opt/***/dags/src/scraper.py", line 227, in scrape_ebay
+    driver = setup_driver()
+             ^^^^^^^^^^^^^^
+[2025-12-03T14:11:00.574+0000] {logging_mixin.py:188} WARNING -   File "/opt/***/dags/src/scraper.py", line 35, in setup_driver
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-03T14:11:00.574+0000] {logging_mixin.py:188} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 47, in __init__
+    super().__init__(
+[2025-12-03T14:11:00.574+0000] {logging_mixin.py:188} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-03T14:11:00.574+0000] {logging_mixin.py:188} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+[2025-12-03T14:11:00.574+0000] {logging_mixin.py:188} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+[2025-12-03T14:11:00.575+0000] {logging_mixin.py:188} WARNING - selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-12-03T14:11:00.575+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-03T14:11:00.576+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/airflow_dag.py", line 37, in scraping_task
+    raise Exception("❌ SCRAPING FAILED: No pages downloaded")
+Exception: ❌ SCRAPING FAILED: No pages downloaded
+[2025-12-03T14:11:00.584+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=ebay_scraper_pipeline, task_id=scraping, run_id=scheduled__2025-12-02T00:00:00+00:00, execution_date=20251202T000000, start_date=20251203T141100, end_date=20251203T141100
+[2025-12-03T14:11:00.591+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 7 for task scraping (❌ SCRAPING FAILED: No pages downloaded; 463)
+[2025-12-03T14:11:00.617+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-12-03T14:11:00.633+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-03T14:11:00.637+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
